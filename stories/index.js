@@ -1,13 +1,13 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { Button } from "@storybook/react/demo";
+import DropDown from "../src/UI Components/Drop Down/dropdown";
 
-storiesOf("Button", module)
-  .add("with text", () => <Button>Hello Button</Button>)
+storiesOf("DropDown", module)
+  .add("with text", () => <DropDown>Hello DropDown</DropDown>)
   .add("with emoji", () => (
-    <Button>
+    <DropDown>
       <span role="img" aria-label="so cool">
         😀 😎 👍 💯
       </span>
-    </Button>
+    </DropDown>
   ));

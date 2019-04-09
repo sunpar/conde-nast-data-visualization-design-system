@@ -1,8 +1,13 @@
 {
+  "name": "conde-nast-design-system",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@storybook/react": "^5.0.6",
-    "babel-loader": "^8.0.5"
+    "babel-loader": "^8.0.5",
+    "tailwindcss": "^0.7.4"
   },
   "dependencies": {
     "react": "^16.8.6",
