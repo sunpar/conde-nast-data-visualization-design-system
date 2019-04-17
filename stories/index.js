@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import DropDown from "../src/UI Components/Drop Down/dropdown";
+import DropDown from "../src/Atoms/Drop Down/dropdown";
 
 storiesOf("DropDown", module)
   .add("with text", () => <DropDown>Hello DropDown</DropDown>)
