@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
+import checked from "../../Assets/checkbox_checked.png";
+import unchecked from "../../Assets/checkbox_unchecked.png";
+
 const CheckListItem = ({
   styles = {},
   children,
@@ -18,13 +21,14 @@ const CheckListItem = ({
   return (
     <li
       style={styles}
-      className="list-reset"
+      className="list-reset flex pt-1"
       role="button"
       onClick={() => {
         setChecked(!isChecked);
         clickHandler();
       }}
     >
+      <img className="m-auto pl-2 pr-2" src={isChecked ? checked : unchecked} />
       {children}
     </li>
   );
