@@ -28,7 +28,7 @@ const CheckListItem = ({
         clickHandler();
       }}
     >
-      <img className="m-auto pl-2 pr-2" src={isChecked ? checked : unchecked} />
+      <img className="mt-auto mb-auto ml-2 mr-2" src={isChecked ? checked : unchecked} />
       {children}
     </li>
   );
