@@ -2,23 +2,13 @@ import React from "react";
 
 import { storiesOf } from "@storybook/react";
 import Button from "./button";
+import { color } from "@storybook/addon-knobs";
+import "../../css/tailwind.css";
 
 storiesOf("Button", module)
-  .addWithJSX(
-    "Default",
-    () => <Button >Hello world</Button>,
-    {
-      info: {
-        text: `Default Button Component`
-      }
-    }
-  )
-  .addWithJSX(
-    "with Green Background",
-    () => <Button bg="green">Hello world2</Button>,
-    {
-      info: {
-        text: `Button with Green Background`
-      }
-    }
-  );
+  .addWithJSX("with background", () => (
+    <Button bg="palegoldenrod">Hello world</Button>
+  ))
+  .addWithJSX("with background 2", () => (
+    <Button bg={color("bg", "green", "group1")}>Hello world2</Button>
+  ));
