@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
-import checked from "../../Assets/checkbox_checked.png";
-import unchecked from "../../Assets/checkbox_unchecked.png";
+import checked from "../Assets/checkbox_checked.png";
+import unchecked from "../Assets/checkbox_unchecked.png";
 
 const CheckListItem = ({
   styles = {},
@@ -28,14 +28,17 @@ const CheckListItem = ({
         clickHandler();
       }}
     >
-      <img className="mt-auto mb-auto ml-2 mr-2" src={isChecked ? checked : unchecked} />
+      <img
+        className="mt-auto mb-auto ml-2 mr-2"
+        src={isChecked ? checked : unchecked}
+      />
       {children}
     </li>
   );
 };
 
 CheckListItem.propTypes = {
-  styles: PropTypes.shape,
+  styles: PropTypes.object,
   children: PropTypes.node,
   clickHandler: PropTypes.func,
   shouldCheck: PropTypes.bool

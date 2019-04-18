@@ -1,14 +1,16 @@
 import React from "react";
+import PropTypes from "prop-types";
+import Button from "../Button";
 
-import "./dropdown.css";
-
-const DropDown = ({ children}) => {
-    return (
-  <div className="">
-    <div className="">{children}</div>
+const DropDown = ({ children }) => {
+  return (
     <div className="">
+      <Button>Sample Dropdown</Button>
+      <div className="bg-white text-grey-darker p-2 border-grey-light border">
+        <ul className="list-reset">{children}</ul>
+      </div>
     </div>
-    </div>);
+  );
 };
 
 DropDown.propTypes = {

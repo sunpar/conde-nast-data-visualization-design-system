@@ -3,7 +3,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import Button from "./button";
 import { text } from "@storybook/addon-knobs";
-import "../../css/tailwind.css";
+import "../css/tailwind.css";
 
 storiesOf("Atoms/Button", module)
   .addWithJSX("default", () => <Button>Click Me</Button>)
