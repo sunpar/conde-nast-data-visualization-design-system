@@ -5,7 +5,7 @@
   "bugs": {
     "url": "https://github.com/sunpar/conde-nast-data-visualization-design-system/issues"
   },
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "build/index.js",
   "description": "The Conde Nast Data Viz Design System",
   "license": "MIT",
@@ -19,6 +19,7 @@
     "@storybook/react": "^5.0.6",
     "babel-loader": "^8.0.5",
     "babel-preset-react": "^6.24.1",
+    "css-loader": "^2.1.1",
     "image-webpack-loader": "^4.6.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
