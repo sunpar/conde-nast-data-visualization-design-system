@@ -5,7 +5,7 @@
   "bugs": {
     "url": "https://github.com/sunpar/conde-nast-data-visualization-design-system/issues"
   },
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "build/index.js",
   "description": "The Conde Nast Data Viz Design System",
   "license": "MIT",
