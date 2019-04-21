@@ -1,7 +1,13 @@
 {
-  "name": "conde-nast-design-system",
-  "version": "0.1.0",
+  "name": "@sunpar/conde-nast-data-design",
+  "author": "Sundeep Paruchuri",
+  "homepage": "https://github.com/sunpar/conde-nast-data-visualization-design-system",
+  "bugs": {
+    "url": "https://github.com/sunpar/conde-nast-data-visualization-design-system/issues"
+  },
+  "version": "0.0.1",
   "main": "index.js",
+  "description": "The Conde Nast Data Viz Design System",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.4.3",
@@ -20,10 +26,31 @@
     "postcss-mixins": "^6.2.1",
     "postcss-preset-env": "^6.6.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "rxjs": "^6.4.0"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
   },
   "scripts": {
     "tailwind:css": "tailwind build src/css/tailwind.src.css -c  tailwind.js -o src/css/tailwind.css",
     "storybook": "yarn tailwind:css && start-storybook"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunpar/conde-nast-data-visualization-design-system.git"
+  },
+  "keywords": [
+    "design",
+    "system",
+    "react",
+    "data",
+    "visualization",
+    "condenast"
+  ],
+  "files": [
+    "lib",
+    "src"
+  ]
 }

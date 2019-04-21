@@ -19,4 +19,7 @@ storiesOf("Atoms/Button", module)
   ))
   .addWithJSX("with click handler", () => (
     <Button clickHandler={() => alert("hello")}>Click Me</Button>
-  ));
+  ))
+  .addWithJSX("with hover", () => (
+    <Button onmouseover={() => alert("hello")}>Click Me</Button>
+  ));;
