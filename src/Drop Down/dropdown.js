@@ -1,7 +1,7 @@
 import React, { useState, useRef, useLayoutEffect } from "react";
 import PropTypes from "prop-types";
 import { fromEvent } from "rxjs";
-import { filter, tap } from "rxjs/operators";
+import { filter } from "rxjs/operators";
 import Button from "../Button";
 
 const DropDown = ({

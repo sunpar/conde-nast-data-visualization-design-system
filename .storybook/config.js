@@ -2,6 +2,7 @@ import { configure, setAddon, addDecorator } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import JSXAddon from "storybook-addon-jsx";
 import { withKnobs } from "@storybook/addon-knobs";
+import "../src/css/tailwind.css";
 
 setAddon(JSXAddon);
 addDecorator(withKnobs)
