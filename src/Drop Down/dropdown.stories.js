@@ -13,7 +13,6 @@ const items = [
 storiesOf("Molecules/Dropdown", module)
   .addWithJSX("default", () => {
     return (
-      <div className="w-64">
         <DropDown>
           {items.map(item => (
             <CheckListItem key={item.key} shouldCheck={item.state === "S"}>
@@ -21,13 +20,12 @@ storiesOf("Molecules/Dropdown", module)
             </CheckListItem>
           ))}
         </DropDown>
-      </div>
     );
   })
   .addWithJSX("with other elements", () => {
     return (
       <>
-      <div className="w-64">
+      <div className="w-48">
         <DropDown>
           {items.map(item => (
             <CheckListItem key={item.key} shouldCheck={item.state === "S"}>

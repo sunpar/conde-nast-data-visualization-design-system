@@ -33,7 +33,7 @@ const DropDown = ({
   return (
     <div
       style={parentStyles}
-      className="relative inline-block"
+      className="relative inline-block w-full"
       ref={containerEl}
     >
       <Button style={buttonStyles} clickHandler={() => setOpen(!isOpen)}>

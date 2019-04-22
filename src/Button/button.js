@@ -11,7 +11,7 @@ const Button = ({
   return (
     <button
       style={styles}
-      className={`w-full bg-white text-grey-darker p-2 border-grey-light border rounded`}
+      className={`w-full bg-white text-grey-darker p-2 border-grey-light border rounded font-sans`}
       onClick={clickHandler}
       onMouseOver={onMouseOver}
       onMouseOut={onMouseOut}

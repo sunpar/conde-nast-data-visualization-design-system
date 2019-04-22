@@ -21,6 +21,8 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^2.1.1",
     "image-webpack-loader": "^4.6.0",
+    "postcss-font-magician": "^2.2.1",
+    "postcss-loader": "^3.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "storybook-addon-jsx": "^7.1.0",
