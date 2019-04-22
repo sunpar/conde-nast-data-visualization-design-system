@@ -5,10 +5,12 @@ import checked from "../Assets/checkbox_checked.png";
 import unchecked from "../Assets/checkbox_unchecked.png";
 
 const CheckListItem = ({
-  styles = {},
+  listStyles = {},
+  imageStyles = {},
   children,
   clickHandler = () => {},
-  shouldCheck = false
+  shouldCheck = false,
+  active = true
 }) => {
   const [isChecked, setChecked] = useState(false);
 
@@ -17,19 +19,23 @@ const CheckListItem = ({
       setChecked(shouldCheck);
     }
   }, [shouldCheck]);
-
   return (
     <li
-      style={styles}
-      className="list-reset flex pt-1"
-      role="button"
+      style={listStyles}
+      className={`list-reset flex pt-3 ${
+        active ? "opacity-100" : "opacity-50"
+      }`}
+      role={active ? "button" : "listitem"}
       onClick={() => {
-        setChecked(!isChecked);
-        clickHandler();
+        if (active) {
+          setChecked(!isChecked);
+          clickHandler();
+        }
       }}
     >
       <img
         className="mt-auto mb-auto ml-2 mr-2"
+        style={imageStyles}
         src={isChecked ? checked : unchecked}
       />
       {children}
@@ -38,10 +44,12 @@ const CheckListItem = ({
 };
 
 CheckListItem.propTypes = {
-  styles: PropTypes.object,
+  listStyles: PropTypes.object,
+  imageStyles: PropTypes.object,
   children: PropTypes.node,
   clickHandler: PropTypes.func,
-  shouldCheck: PropTypes.bool
+  shouldCheck: PropTypes.bool,
+  active: PropTypes.bool
 };
 
 export default CheckListItem;

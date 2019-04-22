@@ -1,3 +1,7 @@
+html {
+  font-family: 'Rubik';
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -365,7 +369,7 @@ template {
 
 html {
   box-sizing: border-box; /* 1 */
-  font-family: Rubik; /* 2 */
+  font-family: sans-serif; /* 2 */
 }
 
 *,

@@ -5,13 +5,16 @@ const Button = ({
   styles = {},
   children,
   clickHandler,
+  active = false,
   onMouseOver,
   onMouseOut
 }) => {
   return (
     <button
       style={styles}
-      className={`w-full bg-white text-grey-darker p-2 border-grey-light border rounded font-sans`}
+      className={`w-full p-2 border-grey-light border rounded font-sans ${
+        active ? `bg-grey-darkest text-white` : `bg-white text-grey-darker`
+      }`}
       onClick={clickHandler}
       onMouseOver={onMouseOver}
       onMouseOut={onMouseOut}
@@ -25,6 +28,7 @@ Button.propTypes = {
   styles: PropTypes.object,
   children: PropTypes.node,
   clickHandler: PropTypes.func,
+  active: PropTypes.bool,
   onMouseOver: PropTypes.func,
   onMouseOut: PropTypes.func
 };
